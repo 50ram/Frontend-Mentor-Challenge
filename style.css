@@ -1,0 +1,307 @@
+@font-face {
+  font-family: HankenGrotesk;
+  src: url("assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+
+* {
+  font-family: "HankenGrotesk";
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    /*margin-top: 20px;*/
+    -webkit-box-shadow: 3px 5px 10px -3px rgba(135, 133, 135, 0.45);
+    -moz-box-shadow: 3px 5px 10px -3px rgba(135, 133, 135, 0.45);
+    box-shadow: 3px 5px 10px -3px rgba(135, 133, 135, 0.45);
+    border-radius: 30px;
+  }
+
+  /* Result Card */
+  .container .result_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(
+      #6743fd,
+      #6340fc,
+      #5b3efa,
+      #503af7,
+      #4332f0,
+      #3b30ee,
+      #322bea
+    );
+    border-radius: 40px;
+    padding: 30px 80px 30px 80px;
+    color: #cabeff;
+  }
+  .container .result_card h1 {
+    color: #fffeff;
+  }
+  .container .result_card p {
+    text-align: center;
+    font-weight: bold;
+  }
+  .container .result_card .circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    color: #fffeff;
+    background-image: linear-gradient(
+      to top,
+      #6743fd,
+      #6340fc,
+      #5b3efa,
+      #503af7,
+      #4332f0,
+      #3b30ee,
+      #322bea
+    );
+  }
+  .container .result_card .circle h1 {
+    margin: 0;
+    font-size: 4em;
+  }
+  .container .result_card .circle p {
+    margin: 5px 0 0 0;
+    color: #cabeff;
+    font-weight: bold;
+  }
+  /* Result Card */
+
+  /* Summary Card */
+  .container .summary_card {
+    display: flex;
+    flex-direction: column;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 30px 40px 30px 40px;
+  }
+  .container .summary_card .summary_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 290px;
+    height: 60px;
+    border-radius: 15px;
+    margin-top: 15px;
+    padding: 0px 15px 0px 15px;
+  }
+  .container .summary_card .summary_item .qualification {
+    margin-left: auto;
+  }
+  .container .summary_card .summary_item .qual_preset {
+    color: #cabeff;
+  }
+  .container .summary_card .red {
+    background-color: #fff6f5;
+  }
+  .container .summary_card .yellow {
+    background-color: #fffbf2;
+  }
+  .container .summary_card .green {
+    background-color: #f2fbfa;
+  }
+  .container .summary_card .blue {
+    background-color: #f3f3fd;
+  }
+  .container .summary_card .red .text_red {
+    color: #c95556;
+  }
+  .container .summary_card .yellow .text_yellow {
+    color: #ffc345;
+  }
+  .container .summary_card .green .text_green {
+    color: #3aa88d;
+  }
+  .container .summary_card .blue .text_blue {
+    color: #1f2b9b;
+  }
+  .container .summary_card .summary_item .text {
+    margin-left: 8px;
+  }
+  .container .summary_card .button {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fffeff;
+    background-color: #303b59;
+    border-radius: 60px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .container .summary_card .button:hover {
+    background-image: linear-gradient(
+      #6743fd,
+      #6340fc,
+      #5b3efa,
+      #503af7,
+      #4332f0,
+      #3b30ee,
+      #322bea
+    );
+  }
+  /* Summary Card */
+}
+
+@media screen and (max-width: 799px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  /* Result Card */
+  .container .result_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(
+      #6743fd,
+      #6340fc,
+      #5b3efa,
+      #503af7,
+      #4332f0,
+      #3b30ee,
+      #322bea
+    );
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    color: #cabeff;
+    padding-bottom: 15px;
+    width: 100%;
+  }
+  .container .result_card h1 {
+    color: #fffeff;
+  }
+  .container .result_card p {
+    text-align: center;
+    font-weight: bold;
+  }
+  .container .result_card .circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: #fffeff;
+    background-image: linear-gradient(
+      to top,
+      #6743fd,
+      #6340fc,
+      #5b3efa,
+      #503af7,
+      #4332f0,
+      #3b30ee,
+      #322bea
+    );
+  }
+  .container .result_card .circle h1 {
+    margin: 0;
+    font-size: 4em;
+  }
+  .container .result_card .circle p {
+    margin: 5px 0 0 0;
+    color: #cabeff;
+    font-weight: bold;
+  }
+  /* Result Card*/
+
+  /* Summary Card */
+  .container .summary_card {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 40px 30px 40px;
+  }
+  .container .summary_card .summary_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 290px;
+    height: 60px;
+    border-radius: 15px;
+    margin-top: 15px;
+    padding: 0px 15px 0px 15px;
+  }
+  .container .summary_card .summary_item .qualification {
+    margin-left: auto;
+  }
+  .container .summary_card .summary_item .qual_preset {
+    color: #cabeff;
+  }
+  .container .summary_card .red {
+    background-color: #fff6f5;
+  }
+  .container .summary_card .yellow {
+    background-color: #fffbf2;
+  }
+  .container .summary_card .green {
+    background-color: #f2fbfa;
+  }
+  .container .summary_card .blue {
+    background-color: #f3f3fd;
+  }
+  .container .summary_card .red .text_red {
+    color: #c95556;
+  }
+  .container .summary_card .yellow .text_yellow {
+    color: #ffc345;
+  }
+  .container .summary_card .green .text_green {
+    color: #3aa88d;
+  }
+  .container .summary_card .blue .text_blue {
+    color: #1f2b9b;
+  }
+  .container .summary_card .button {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fffeff;
+    background-color: #303b59;
+    border-radius: 60px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .container .summary_card .button:active {
+    background-image: linear-gradient(
+      #6743fd,
+      #6340fc,
+      #5b3efa,
+      #503af7,
+      #4332f0,
+      #3b30ee,
+      #322bea
+    );
+  }
+  /* Summary Card*/
+}
+
+/* att */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
